@@ -1,0 +1,44 @@
+PRIORITY
+Add page with failed resultList -> 1.5
+Add button to show answer + explanationn-> 1
+Import all kafka part1 questions
+Import all kafka part1 questions
+
+BACKLOG
+Add button to see answer check right/wrong ->
+Ability to define num of questions from each section
+Last Question should not have next button
+
+
+--------------
+
+
+By using following template, please adjust the following questions
+
+the format is this
+
+## Question 1
+
+This is some Question from part3. Btw the answer is C?
+
+- A. whatever1
+- B. whatever2
+- C. whatever3
+- D. whatever4
+
+<details><summary>Response:</summary>
+
+**Answer:** C
+
+**Explanation:**
+some explanation
+</details>
+
+The questions are
+
+
+
+
+
+
+

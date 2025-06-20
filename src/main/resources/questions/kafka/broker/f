@@ -1,0 +1,58 @@
+## Broker
+
+Kafka is configured with following parameters - log.retention.hours = 168 log.retention.minutes = 168 log.retention.ms = 168
+How long will the messages be retained for?
+
+1. 168ms --
+2. 168 mins
+3. 168 hours
+
+If more than one similar config is specified, the smaller unit size will take precedence.
+
+---
+
+Once sent to a topic, a message can be modified'
+
+1. Yes
+2. No --
+
+Kafka logs are append-only and the data is immutable
+
+---
+
+How often is log compaction evaluated?
+
+1. Every time a message is sent to kafka.
+2. Every time a new partition is created.
+3. Evert time a segment is closed. --
+
+Log compaction is evaluated every time a segment is closed.
+It will be triggered if enough data is "dirty" (see dirty ratio config)
+
+---
+
+The Controller is a broker that is... (select two)
+
+1. elected by broker majority.
+2. elected by zookeeper ensemble.
+3. is responsible for partion leader election. --
+
+Controller is a broker that in addition to usual broker functions is responsible for partition leader election.
+The election of that broker happens thanks to Zookeeper and at any time only one broker can be a controller
+
+---
+
+A producer application was sending messages to a partition with a replication factor of 2 by connecting to Broker 1 that was hosting partition leader.
+If the Broker 1 goes down, what will happen?
+> TODO
+1. The topic will be unavliable.
+2. The producer will stop working.
+3. The producer will automatically produce to broker that has been elected leader. --
+
+
+Once the client connects to any broker, it is connected to the entire cluster and in case of leadership changes,
+the clients automatically do a Metadata Request to an available broker to find out who is the new leader for the topic.
+Hence the producer will automatically keep on producing to the correct Kafka Broker
+
+
+---
