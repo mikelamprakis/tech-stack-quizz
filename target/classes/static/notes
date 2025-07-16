@@ -122,7 +122,16 @@ I have the follwoing quizz categories for kafka -connect
 10.Security in Kafka Connect.md
 
 
+
+1.Introduction to ksqlDB.md
+2.Creating Streams & Tables.md
+3.Stream Processing in ksqlDB.md
+4.Joins and Enrichments.md
+5.ksqlDB in Production.md
+
 Whhere should each of these questions go ?
 
 Just give me a table/matrix question number - category
+
+
 
