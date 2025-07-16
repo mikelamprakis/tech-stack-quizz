@@ -1,0 +1,52 @@
+For **Kafka Producer** questions, you can organize them into the following categories:
+
+---
+
+### 🔹 1. **Configuration & Properties**
+
+* `acks`, `retries`, `linger.ms`, `batch.size`, `compression.type`, etc.
+* How different configs affect throughput, latency, durability.
+
+### 🔹 2. **Delivery Semantics**
+
+* At-most-once, at-least-once, exactly-once
+* Idempotence (`enable.idempotence=true`)
+* Transactions and `transactional.id`
+
+### 🔹 3. **Partitioning Logic**
+
+* Default partitioner vs custom partitioner
+* Key-based vs round-robin distribution
+* Ensuring message order within a partition
+
+### 🔹 4. **Error Handling & Retries**
+
+* Handling transient vs fatal errors
+* Retry behavior and delivery guarantees
+* Idempotent producer retries
+
+### 🔹 5. **Throughput vs Latency Tradeoffs**
+
+* Batching, compression, buffer.memory
+* High-throughput vs low-latency tuning
+
+### 🔹 6. **Serialization**
+
+* Key/value serializers
+* Using Avro/Protobuf/JSON
+* Schema Registry integration
+
+### 🔹 7. **Producer Internals**
+
+* RecordAccumulator, Sender thread, IO threads
+* Asynchronous vs synchronous sends
+* Metrics and monitoring
+
+### 🔹 8. **Security**
+
+* SSL, SASL, authentication & encryption
+* ACLs for producing to topics
+
+---
+
+Would you like example questions under each of these [categories](f)?

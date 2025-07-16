@@ -6,22 +6,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class QuestionUtils {
-
-    //    public static void loadQuestions() throws IOException {
-//        // TODO : load Qs from markdown
-//        QuestionParser parser = new QuestionParser();
-//        String content = readMarkdownFile("src/main/resources/questions/part3.md");
-//        List<String> list = Arrays.stream(content.split("##")).toList().stream().skip(1).toList();
-//        List<Question> l = list.stream().map(s -> parser.parse(s.trim())).toList();
-//
-//    }
 
     public static Map<String, Map<String, List<Question>>> loadQuestions() throws IOException {
         Map<String, Map<String, List<Question>>> questions = new HashMap<>();
@@ -30,12 +21,12 @@ public class QuestionUtils {
         Files.walk(basePath)
                 .filter(Files::isRegularFile)
                 .filter(path -> path.toString().endsWith(".md"))
+                .peek(path -> System.out.println("path is --> "+path))
                 .forEach(path -> {
                     try {
                         String stackName = basePath.relativize(path.getParent()).getName(0).toString();
                         String sectionName = basePath.relativize(path.getParent()).getName(1).toString();
                         String content = Files.readString(path);
-                        System.out.println("---"+sectionName);
 
                         List<String> questionBlocks = Arrays.stream(content.split("##"))
                                 .skip(1)
@@ -46,44 +37,84 @@ public class QuestionUtils {
                                 .map(questionBlock -> parse(questionBlock, sectionName, stackName))
                                 .toList();
 
-                        questions.computeIfAbsent(stackName, k -> new HashMap<>())
-                                .put(sectionName, questionList);
+                        System.out.println("questions--->"+questions);
+                        if (questions.containsKey(stackName)){
+                            if (questions.get(stackName).containsKey(sectionName)){
+                                questions.get(stackName).computeIfPresent(sectionName, (section, existingQuestions) -> {
+                                    List<Question> updatedQuestionList = new ArrayList<>();
+                                    updatedQuestionList.addAll(existingQuestions);
+                                    updatedQuestionList.addAll(questionList);
+                                    return updatedQuestionList;
+                                });
+                            }else{
+                                questions.get(stackName).computeIfAbsent(sectionName , s -> new ArrayList<>()).addAll(questionList);
+                            }
+                        }else{
+                            questions.computeIfAbsent(stackName, k -> new HashMap<>()).put(sectionName, questionList);
+                        }
                     } catch (IOException e) {
                         e.printStackTrace();
+                        System.out.println("-1-->"+path);
                     }
                 });
-
-        //System.out.println("---->"+ questions);
         return questions;
     }
 
-    public static Question parse(String questionMd, String sectionName, String stackName){
-        String part1 = questionMd.split("<details><summary>Response:</summary>")[0].trim();
+    private static String extractContent(String text, String regex, int group){
+        Pattern pattern = Pattern.compile(regex, Pattern.DOTALL);
+        Matcher matcher = pattern.matcher(text);
+        String content = "";
+        if (matcher.find()) {
+            content = matcher.group(group).trim();
+            System.out.println("Extracted Content: " + content);
+        }
+        return content;
+    }
 
-        List<String> l = Arrays.stream(part1.split("\n")).map(String::trim).filter(s -> !s.isBlank()).toList();
-        System.out.println(l);
-
-
-        String qId = l.get(0).replace("\s","").trim();
-        System.out.println(String.join("-", stackName, sectionName, qId));
-        String qContent = l.get(1).trim();
-        System.out.println(qContent);
-        Map<String,String> options = l.subList(2, l.size()).stream()
+    private static Map<String,String> getAnswerOptions(String questionSection){
+        String answerOptions = extractContent(questionSection.substring(questionSection.indexOf("**Options**")), "```markdown(.*?)```", 1);
+        List<String> optionList = Arrays.stream(answerOptions.split("\n")).map(String::trim).filter(s -> !s.isBlank()).toList();
+        Map<String,String> options = optionList
+                .stream()
                 .peek(s -> System.out.println("--->"+s))
-                .collect(Collectors.toMap(s -> s.split("\\.")[0].replace("-", "").replace("*","").trim(), s -> s.split("\\.\s")[1]));
-        System.out.println("options--->"+ options);
-        String part2 = questionMd.split("<details><summary>Response:</summary>")[1].trim();
+                .collect(Collectors.toMap(s ->
+                                s.split("\\.")[0]
+                                        .replace("-", "")
+                                        .replace("*","")
+                                        .trim(),
+                        s -> s.split("\\.\s")[1]
+                ));
+        return options;
+    }
 
+    public static Question parse(String questionMd, String sectionName, String stackName){
+        System.out.println("questionMd--->"+questionMd);
+        String questionRegex = "(.*?)<details><summary>Response:</summary>";
+        String questionSection = extractContent(questionMd,questionRegex, 1);
 
-        Question q = new Question();
-        q.setId(String.join("-", stackName, sectionName, qId));
-        q.setQuestionText(qContent);
-        q.setOptions(options);
-        q.setCorrectAnswer(part2.trim().substring(part2.indexOf("**Answer:**")+ "**Answer:**".length(), part2.indexOf("**Explanation:**")).trim());
-        q.setExplanation(part2.trim().substring(
-                part2.trim().indexOf("**Explanation:**")+ "**Explanation:**".length(),
-                part2.trim().indexOf("</details>")).trim()
-        );
+        System.out.println("questionSection--->"+questionSection);
+        String qId = questionSection.substring(0,questionSection.indexOf("```markdown")).replace("\s", "");
+        System.out.println("---->>"+qId);
+        String question = extractContent(questionSection, "```markdown(.*?)```", 1);
+        Map<String,String> options = getAnswerOptions(questionSection);
+
+        String responseRegex = "<details><summary>Response:</summary>(.*?)</details>";
+        String responseSection = extractContent(questionMd, responseRegex,1);
+        String correctAnswer = responseSection.substring(
+                responseSection.indexOf("**Answer:**")+"**Answer:**".length(),
+                responseSection.indexOf("**Explanation:**")
+        ).trim();
+        System.out.println("-->"+correctAnswer);
+        System.out.printf("___");
+        String explanation = extractContent(responseSection, "```markdown(.*?)```", 1);
+
+        Question q = Question.builder()
+                .id(String.join("-", stackName, sectionName, qId))
+                .questionText(question)
+                .options(options)
+                .correctAnswer(correctAnswer)
+                .explanation(explanation)
+                .build();
         System.out.println(q);
         return q;
     }
@@ -92,12 +123,4 @@ public class QuestionUtils {
         return Files.readString(Path.of(filePath));
     }
 
-
-    //    public List<Question> getAllQuestions(String quiz, List<String> sections) {
-    //        List<Question> list = questions.get(quiz).entrySet().stream()
-    //                .filter(entry -> sections.contains(entry.getKey()))
-    //                .flatMap(entry -> entry.getValue().stream())
-    //                .toList();
-    //        return list;
-    //    }
 }

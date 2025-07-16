@@ -5,6 +5,7 @@ import { state } from '../core/state.js';
 import { showStep } from '../ui/uiFunctions.js';
 import { nextQuestion, previousQuestion } from '../logic/navigation.js';
 import { submitQuiz, resetQuiz} from '../logic/actions.js';
+import { closeModal } from '../ui/uiFunctions.js';
 
 export function initializeEventListeners() {
     elements.selectQuizBtn.addEventListener('click', async () => {
@@ -23,6 +24,23 @@ export function initializeEventListeners() {
     document.querySelector('[data-action="next"]').addEventListener('click', nextQuestion);
     document.querySelector('[data-action="submit"]').addEventListener('click', submitQuiz);
     document.querySelector('[data-action="reset"]').addEventListener('click', resetQuiz);
+    
+    // Add modal event listeners
+    elements.closeModal.addEventListener('click', closeModal);
+    
+    // Close modal when clicking outside of it
+    window.addEventListener('click', (event) => {
+        if (event.target === elements.modal) {
+            closeModal();
+        }
+    });
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && elements.modal.style.display === 'block') {
+            closeModal();
+        }
+    });
 }
 
 // Initialize the application

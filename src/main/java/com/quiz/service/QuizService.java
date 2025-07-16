@@ -90,7 +90,12 @@ public class QuizService {
             if (question != null) {
                 totalPossibleScore.addAndGet(question.getPoints());
                 System.out.println("-answer"+ answer + "-getCorrectAnswer" +question.getCorrectAnswer() );
-                if (answer.equals(question.getCorrectAnswer())) {
+                
+                // Normalize answers for comparison - remove spaces around commas
+                String normalizedUserAnswer = answer.replaceAll("\\s*,\\s*", ",").trim();
+                String normalizedCorrectAnswer = question.getCorrectAnswer().replaceAll("\\s*,\\s*", ",").trim();
+                System.out.println(normalizedUserAnswer+" -vs-"+normalizedCorrectAnswer);
+                if (normalizedUserAnswer.equals(normalizedCorrectAnswer)) {
                     score.addAndGet(question.getPoints());
                 }
             }

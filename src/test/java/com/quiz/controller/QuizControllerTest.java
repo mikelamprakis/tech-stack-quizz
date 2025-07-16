@@ -1,6 +1,5 @@
 package com.quiz.controller;
 
-import com.quiz.config.TestConfig;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeEach;

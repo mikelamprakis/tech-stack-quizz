@@ -12,5 +12,13 @@ export const elements = {
     questionNumber: document.getElementById('question-number'),
     question: document.getElementById('question'),
     options: document.getElementById('options'),
-    scoreDisplay: document.getElementById('score-display')
+    scoreDisplay: document.getElementById('score-display'),
+    // Modal elements
+    modal: document.getElementById('answer-modal'),
+    modalQuestionTitle: document.getElementById('modal-question-title'),
+    modalQuestionText: document.getElementById('modal-question-text'),
+    modalOptions: document.getElementById('modal-options'),
+    modalAnswerComparison: document.getElementById('modal-answer-comparison'),
+    modalExplanation: document.getElementById('modal-explanation'),
+    closeModal: document.querySelector('.close-modal')
 };

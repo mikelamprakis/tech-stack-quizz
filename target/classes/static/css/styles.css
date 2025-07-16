@@ -141,6 +141,10 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    min-height: 60px;
 }
 
 #options button:hover {
@@ -151,6 +155,67 @@ h2 {
     background-color: #3498db;
     color: white;
     border-color: #3498db;
+}
+
+.option-key {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    min-width: 30px;
+}
+
+.option-value {
+    text-align: left;
+    flex: 1;
+    line-height: 1.4;
+}
+
+/* Markdown styles for option values */
+.option-value h1, .option-value h2, .option-value h3, 
+.option-value h4, .option-value h5, .option-value h6 {
+    margin: 0.25rem 0;
+    color: inherit;
+}
+
+.option-value p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.option-value ul, .option-value ol {
+    margin: 0.25rem 0;
+    padding-left: 1rem;
+    display: block;
+}
+
+.option-value li {
+    margin: 0.1rem 0;
+    display: list-item;
+    list-style-position: outside;
+}
+
+.option-value ul li {
+    list-style-type: disc;
+}
+
+.option-value ol li {
+    list-style-type: decimal;
+}
+
+.option-value code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.1rem 0.2rem;
+    border-radius: 2px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.option-value strong {
+    font-weight: bold;
+}
+
+.option-value em {
+    font-style: italic;
 }
 
 .navigation-buttons {
@@ -185,4 +250,416 @@ h2 {
     font-size: 2rem;
     color: #2c3e50;
     font-weight: bold;
+}
+
+/* Show Answer Button Styles */
+.show-answer-btn {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 200px;
+    background-color: #17a2b8;
+    color: white;
+}
+
+.show-answer-btn:hover {
+    background-color: #138496;
+}
+
+/* Answer Display Styles */
+.answer-display {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e8f5e8;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    animation: slideDown 0.3s ease-out;
+}
+
+.answer-display.hidden {
+    display: none;
+}
+
+.answer-reveal h4 {
+    color: #155724;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.correct-answer-text {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.explanation-text {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border-left: 4px solid #ffc107;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Markdown content styles */
+.question-text h1, .question-text h2, .question-text h3, 
+.question-text h4, .question-text h5, .question-text h6 {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+
+.question-text p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.question-text ul, .question-text ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.question-text li {
+    margin: 0.25rem 0;
+}
+
+.question-text code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.question-text pre {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.question-text pre code {
+    background: none;
+    padding: 0;
+}
+
+.question-text blockquote {
+    border-left: 4px solid #dee2e6;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.question-text strong {
+    font-weight: bold;
+}
+
+.question-text em {
+    font-style: italic;
+}
+
+.explanation-text h1, .explanation-text h2, .explanation-text h3, 
+.explanation-text h4, .explanation-text h5, .explanation-text h6 {
+    margin: 0.5rem 0;
+    color: #856404;
+}
+
+.explanation-text p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.explanation-text ul, .explanation-text ol {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.explanation-text li {
+    margin: 0.25rem 0;
+}
+
+.explanation-text code {
+    background-color: #fff3cd;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.explanation-text pre {
+    background-color: #fff3cd;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.explanation-text pre code {
+    background: none;
+    padding: 0;
+}
+
+.explanation-text blockquote {
+    border-left: 4px solid #ffc107;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+    color: #856404;
+    font-style: italic;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Incorrect Answers Styles */
+.incorrect-answers {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.incorrect-answers h4 {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.download-section {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 6px;
+}
+
+.download-section .btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.download-section .btn:hover {
+    background-color: #5a6268;
+}
+
+.incorrect-answer-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.incorrect-answer-item h5 {
+    color: #495057;
+    margin-bottom: 0.5rem;
+}
+
+.question-text {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.answer-comparison {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.user-answer .wrong {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.correct-answer .correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.explanation {
+    font-style: italic;
+    color: #6c757d;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-out;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    border-radius: 8px 8px 0 0;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.close-modal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    color: #000;
+}
+
+.modal-body {
+    padding: 1.5rem;
+}
+
+.modal-body h4 {
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.modal-body h4:first-child {
+    margin-top: 0;
+}
+
+.modal-option {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #e9ecef;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.modal-option.user-selected {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+}
+
+.modal-option.correct-answer {
+    border-color: #28a745;
+    background-color: #d4edda;
+}
+
+.option-key {
+    font-weight: bold;
+    min-width: 30px;
+}
+
+.option-value {
+    flex: 1;
+}
+
+.badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.wrong-badge {
+    background-color: #dc3545;
+    color: white;
+}
+
+.correct-badge {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-comparison {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.user-answer-modal .wrong {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.correct-answer-modal .correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.click-hint {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 } 

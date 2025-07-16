@@ -1,0 +1,41 @@
+Hi want you to bring the bellow questions in this form using this template
+
+## Question 1
+
+
+```markdown
+This is some Question from part1. Btw the answer is C?
+
+```
+
+**Options**
+```markdown
+- A. answer1
+- B. answer2
+- C. answer3
+- D. answer4
+```
+
+<details><summary>Response:</summary>
+
+**Answer:** C
+
+**Explanation:**
+
+```markdown
+Here is some explanation
+
+- A. explanation1
+- B. explanation2
+- C. explanation3
+- D. explanation4
+```
+
+</details>
+
+---
+
+
+The questions are bellow
+
+

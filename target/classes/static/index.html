@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -45,6 +46,22 @@
             <h2>Quiz Results</h2>
             <div id="score-display"></div>
             <button data-action="reset" class="btn btn-primary">Take Another Quiz</button>
+        </div>
+    </div>
+
+    <!-- Modal for incorrect answer details -->
+    <div id="answer-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-question-title"></h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modal-question-text"></div>
+                <div id="modal-options"></div>
+                <div id="modal-answer-comparison"></div>
+                <div id="modal-explanation"></div>
+            </div>
         </div>
     </div>
 
