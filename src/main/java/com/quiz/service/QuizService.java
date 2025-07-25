@@ -58,7 +58,7 @@ public class QuizService {
     public List<Question> getQuestionsForSections(String quizId, List<String> sectionIds) {
         List<Question> filteredQuestions = new ArrayList<>();
         Map<String, List<Question>> quizQuestions = questions.get(quizId);
-        
+        System.out.println("--->"+sectionIds+"---"+quizQuestions);
         if (quizQuestions != null) {
             for (String sectionId : sectionIds) {
                 List<Question> sectionQuestions = quizQuestions.get(sectionId);

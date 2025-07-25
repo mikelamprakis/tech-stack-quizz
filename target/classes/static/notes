@@ -23,7 +23,17 @@ Bring the folowing questions to the following format
 please generate 15 questions with regards to the following topic in the attached file
 
 
-By using following template, bring to the bellow format the fololwing questions
+By using following template, generate 12 questions with  the bellow format the topic
+
+**4. EOS in Kafka Streams (Optional Swap)**
+
+(You can include this instead of "Consumer Isolation" if you’re targeting stream processing developers.)
+
+**Topics to include:**
+
+* How Streams uses transactions and changelogs
+* Exactly-once vs exactly-once-v2 processing guarantees
+* How state stores and output topics are coordinated
 
 The format is this
 
@@ -123,11 +133,11 @@ I have the follwoing quizz categories for kafka -connect
 
 
 
-1.Introduction to ksqlDB.md
-2.Creating Streams & Tables.md
-3.Stream Processing in ksqlDB.md
-4.Joins and Enrichments.md
-5.ksqlDB in Production.md
+Controller & Leader Election.md
+Kafka Architecture & Components.md
+Producer & Consumer Mechanics.md
+Replication & Fault Tolerance.md
+ZooKeeper vs. KRaft Mode.md
 
 Whhere should each of these questions go ?
 

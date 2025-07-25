@@ -1,0 +1,76 @@
+1
+practice quizz security
+organize security
+study security again
+----------------------------
+2
+study producers again
+organize producers
+organize quizz producers
+----------------------------
+3
+study consumers again
+organize consumers
+organize quizz consumers
+-----------------------------
+4
+organize broker quizz
+organize topic quizz
+organize admin quizz
+study admin-brokers
+-----------------------------
+5
+create cli course
+practice cli quizz
+----------------------------
+6
+monitoring study
+oganize monitoring
+quizz monitoring
+---------------------------
+7
+streams study
+streams quizz
+---------------------------
+8
+connect study
+connect quizz
+
+
+
+OTHER TOPICS
+schema--registry
+ksql
+rest-proxy
+
+
+
+
+-------------
+broker-topics-admin
+producers
+consumers
+internals
+--------------
+streams
+connect
+--------------
+eos
+--------------
+monitor
+security
+--------------
+schema-registry
+ksql
+rest-proxy
+
+
+
+2. Topics, Partitions, and Logs.md
+3. How Kafka Scales.md
+4. Replication & Fault Tolerance.md
+5. Cleanup Policies: Retention, Compaction and Segments.md
+6. Managing Topics & Brokers With CLI.md
+7. Broker VS Topic Level Configurations.md
+8. Designing Topic & Partition Strategy.md
+9. The Admin API : Managing Kafka Programatically.md
