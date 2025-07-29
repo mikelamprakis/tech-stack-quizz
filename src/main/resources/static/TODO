@@ -47,30 +47,45 @@ rest-proxy
 
 
 -------------
-broker-topics-admin
-producers
-consumers
-internals
+broker-topics - DONE
+producers   - DONE
+consumers   - DONE
+internals   - DONE
 --------------
-streams
-connect
+streams    - DONE
+ksql   - DONE
 --------------
 eos
 --------------
+schema-registry  - TODO
+------------
+connect
+------------
 monitor
 security
 --------------
-schema-registry
-ksql
+service-proxy
+mirror-maker
+
+
+
+
+
 rest-proxy
 
 
 
-2. Topics, Partitions, and Logs.md
-3. How Kafka Scales.md
-4. Replication & Fault Tolerance.md
-5. Cleanup Policies: Retention, Compaction and Segments.md
-6. Managing Topics & Brokers With CLI.md
-7. Broker VS Topic Level Configurations.md
-8. Designing Topic & Partition Strategy.md
-9. The Admin API : Managing Kafka Programatically.md
+
+-----------
+Study Streams
+Do My Tests
+Do Udemy Tests & Collect Qs
+------------------------------
+Study Schema registry
+Do My Tests
+Do Udemy Tests & Collect Qs
+------------------------------
+ksql
+Do My Tests
+Do Udemy Tests & Collect Qs
+--------------------------

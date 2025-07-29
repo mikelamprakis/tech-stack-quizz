@@ -54,13 +54,44 @@ public class QuestionUtils {
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
-                        System.out.println("-1-->"+path);
+                        System.out.println("-1-->" + path);
                     }
                 });
 
         // order the questions map
+        Map<String, Map<String, List<Question>>> sortedQuestions = questions.entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> entry.getValue().entrySet()
+                                .stream()
+                                .sorted(Map.Entry.comparingByKey((key1, key2) -> {
+                                    String[] parts1 = key1.split("\\.", 2);
+                                    String[] parts2 = key2.split("\\.", 2);
 
-        return questions;
+                                    int num1 = Integer.parseInt(parts1[0]);
+                                    int num2 = Integer.parseInt(parts2[0]);
+
+                                    // Compare numeric parts first
+                                    int numComparison = Integer.compare(num1, num2);
+                                    if (numComparison != 0) {
+                                        return numComparison;
+                                    }
+
+                                    // If numeric parts are equal, compare the rest of the string
+                                    return parts1[1].compareTo(parts2[1]);
+                                }))
+                                .collect(Collectors.toMap(
+                                        Map.Entry::getKey,
+                                        Map.Entry::getValue,
+                                        (e1, e2) -> e1,
+                                        LinkedHashMap::new // Preserve the sorted order
+                                )),
+                        (e1, e2) -> e1,
+                        LinkedHashMap::new // Preserve the order of the outer map
+                ));
+
+        return sortedQuestions;
     }
 
     private static String extractContent(String text, String regex, int group){

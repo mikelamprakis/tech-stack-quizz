@@ -7,7 +7,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 public class MarkdownOrganizer {
 
     public static void main(String[] args) throws IOException {
-        Path kafkaFolder = Paths.get("src/main/resources/questions/kafka/5.producers");
+        Path kafkaFolder = Paths.get("src/main/resources/questions/kafka/13.schema-registry");
 
         Files.walkFileTree(kafkaFolder, new SimpleFileVisitor<Path>() {
             @Override
