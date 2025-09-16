@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,7 +17,7 @@ class QuizServiceTest {
     }
 
     @Test
-    void getAllQuestions() throws IOException {
+    void getAllQuestions() throws IOException, URISyntaxException {
          new QuizService();
     }
 

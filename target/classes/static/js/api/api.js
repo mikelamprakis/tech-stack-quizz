@@ -1,5 +1,5 @@
 import { state } from '../core/state.js'; // Import state to update quiz and section data
-import { handleQuizSelection, handleSectionSelection } from '../events/eventHandlers.js';
+import { handleQuizSelection, handleCategoryToggle, handleSectionSelection } from '../events/eventHandlers.js';
 import { elements } from '../ui/elements.js';
 import { showStep, displayQuestion } from '../ui/uiFunctions.js';
 
@@ -25,6 +25,58 @@ export async function loadQuizzes() {
         });
     } catch (error) {
         console.error('Error loading quizzes:', error);
+    }
+}
+
+export async function loadCategories(quizId) {
+    try {
+        const response = await fetch(`/api/quizzes/${quizId}/categories`);
+        const categories = await response.json();
+        
+        elements.sectionList.innerHTML = '';
+        categories.forEach(category => {
+            const categoryItem = document.createElement('div');
+            categoryItem.className = 'category-item';
+            categoryItem.dataset.categoryId = category.id;
+            
+            // Create category header with toggle functionality
+            const categoryHeader = document.createElement('div');
+            categoryHeader.className = 'category-header';
+            categoryHeader.innerHTML = `
+                <div class="category-info">
+                    <span class="category-toggle">▶</span>
+                    <h3>${category.name}</h3>
+                    <span class="section-count">(${category.sections.length} sections)</span>
+                </div>
+            `;
+            categoryHeader.onclick = () => handleCategoryToggle(category.id);
+            
+            // Create sections container (initially hidden)
+            const sectionsContainer = document.createElement('div');
+            sectionsContainer.className = 'sections-container';
+            sectionsContainer.style.display = 'none';
+            
+            // Add sections to the container
+            category.sections.forEach(section => {
+                const sectionItem = document.createElement('div');
+                sectionItem.className = 'section-item';
+                sectionItem.dataset.sectionId = section.id;
+                sectionItem.innerHTML = `
+                    <div class="section-info">
+                        <h4>${section.name}</h4>
+                        <p>Difficulty: ${section.difficulty}</p>
+                    </div>
+                `;
+                sectionItem.onclick = () => handleSectionSelection(section.id);
+                sectionsContainer.appendChild(sectionItem);
+            });
+            
+            categoryItem.appendChild(categoryHeader);
+            categoryItem.appendChild(sectionsContainer);
+            elements.sectionList.appendChild(categoryItem);
+        });
+    } catch (error) {
+        console.error('Error loading categories:', error);
     }
 }
 

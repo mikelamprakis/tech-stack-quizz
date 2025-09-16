@@ -1,0 +1,18 @@
+
+
+
+gcloud beta billing accounts list
+gcloud beta billing projects link 946308758915 --billing-account 0102B0-559E52-5CE76A
+gcloud beta billing projects describe 946308758915
+
+gcloud builds submit --tag gcr.io/tech-stack-quizz/quizz-app
+
+docker build -t tech-stack-quizz:latest .
+docker rm -f tech-stack-quizz && docker run -d -p 8085:8085 --name tech-stack-quizz tech-stack-quizz:latest
+
+
+gcloud run deploy quizz-app \
+  --image gcr.io/tech-stack-quizz/quizz-app \
+  --platform managed \
+  --region europe-west1 \
+  --allow-unauthenticated

@@ -4,6 +4,7 @@ import com.quiz.model.Question;
 import com.quiz.model.Quiz;
 import com.quiz.model.QuizSubmission;
 import com.quiz.model.Section;
+import com.quiz.model.Category;
 import com.quiz.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,20 @@ public class QuizController {
     @GetMapping("/quizzes")
     public List<Quiz> getAllQuizzes() {
         return quizService.getAllQuizzes();
+    }
+
+    @GetMapping("/test")
+    public String test() {
+        return "Test endpoint working";
+    }
+
+    @GetMapping("/quizzes/{quizId}/categories")
+    public List<Category> getCategoriesForQuiz(@PathVariable String quizId) {
+        System.out.println("DEBUG: getCategoriesForQuiz called with quizId: " + quizId);
+        List<Category> categories = quizService.getCategoriesForQuiz(quizId);
+        System.out.println("DEBUG: Returning " + categories.size() + " categories");
+        categories.forEach(category -> System.out.println("---->>>"+category.getName()));
+        return categories;
     }
 
     @GetMapping("/quizzes/{quizId}/sections")
@@ -49,7 +64,7 @@ public class QuizController {
 
     @PostMapping("/submit")
     public QuizSubmission submitQuiz(@RequestBody QuizSubmission submission) {
-        System.out.println("---"+submission);
+        //System.out.println("---"+submission);
         return quizService.submitQuiz(submission);
     }
 } 

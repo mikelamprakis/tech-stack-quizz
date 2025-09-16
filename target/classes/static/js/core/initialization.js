@@ -1,4 +1,4 @@
-import { loadQuizzes, loadSections } from '../api/api.js'; // Import API function to load quizzes
+import { loadQuizzes, loadCategories } from '../api/api.js'; // Import API function to load quizzes
 import { elements } from '../ui/elements.js';
 import { startQuiz } from '../api/api.js';
 import { state } from '../core/state.js'; 
@@ -9,7 +9,7 @@ import { closeModal } from '../ui/uiFunctions.js';
 
 export function initializeEventListeners() {
     elements.selectQuizBtn.addEventListener('click', async () => {
-        await loadSections(state.selectedQuiz);
+        await loadCategories(state.selectedQuiz);
         showStep(elements.sectionSelection);
     });
     

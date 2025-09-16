@@ -166,4 +166,23 @@ Beta
 ---
 
 
+Which timestamps are maintained within Kafka messages?
+
+AppendTime
+
+Your selection is correct
+LogAppendTime
+
+Correct selection
+CreateTime
+
+ReadTime
+
+Overall explanation
+CreateTime is set by the producer when the message is created, reflecting the production time. LogAppendTime is set by the broker when the message is appended to the log, used for operations like log retention and message ordering.
+
+Domain
+Kafka Core Concepts
+
+---
 

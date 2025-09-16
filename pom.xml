@@ -12,9 +12,9 @@
     </parent>
     
     <groupId>com.quiz</groupId>
-    <artifactId>quiz-app</artifactId>
+    <artifactId>tech-stack-quizz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>quiz-app</name>
+    <name>tech-stack-quizz</name>
     <description>Quiz Application with Spring Boot</description>
     
     <properties>
@@ -77,7 +77,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-
+                <configuration>
+                    <mainClass>com.quiz.QuizApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
