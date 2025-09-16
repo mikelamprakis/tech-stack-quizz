@@ -27,7 +27,7 @@ COPY --from=build /app/src/main/resources/static /app/src/main/resources/static
 
 
 # Expose port 8080
-EXPOSE 8085
+EXPOSE 8080
 
 # Run Spring Boot
 ENTRYPOINT ["java","-jar","/app/app.jar"]
