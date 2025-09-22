@@ -1,0 +1,91 @@
+1
+practice quizz security
+organize security
+study security again
+----------------------------
+2
+study producers again
+organize producers
+organize quizz producers
+----------------------------
+3
+study consumers again
+organize consumers
+organize quizz consumers
+-----------------------------
+4
+organize broker quizz
+organize topic quizz
+organize admin quizz
+study admin-brokers
+-----------------------------
+5
+create cli course
+practice cli quizz
+----------------------------
+6
+monitoring study
+oganize monitoring
+quizz monitoring
+---------------------------
+7
+streams study
+streams quizz
+---------------------------
+8
+connect study
+connect quizz
+
+
+
+OTHER TOPICS
+schema--registry
+ksql
+rest-proxy
+
+
+
+
+-------------
+broker-topics - DONE
+producers   - DONE
+consumers   - DONE
+internals   - DONE
+--------------
+streams    - DONE
+ksql   - DONE
+--------------
+eos
+--------------
+schema-registry  - TODO
+------------
+connect
+------------
+monitor
+security
+--------------
+service-proxy
+mirror-maker
+
+
+
+
+
+rest-proxy
+
+
+
+
+-----------
+Study Streams
+Do My Tests
+Do Udemy Tests & Collect Qs
+------------------------------
+Study Schema registry
+Do My Tests
+Do Udemy Tests & Collect Qs
+------------------------------
+ksql
+Do My Tests
+Do Udemy Tests & Collect Qs
+--------------------------

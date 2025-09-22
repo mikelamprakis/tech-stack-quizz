@@ -1,0 +1,61 @@
+
+
+### ✅ **1. Core Concepts & Guarantees**
+
+Focus: Understanding what EOS really means in Kafka — conceptually and practically.
+
+**Topics to include:**
+
+* Difference between *idempotence*, *transactions*, and *EOS*
+* At-most-once vs At-least-once vs Exactly-once
+* Common misconceptions (e.g., EOS includes external DB writes)
+
+---
+
+### 🔄 **2. Producer Mechanics & Transactions**
+
+Focus: How producers achieve EOS through idempotence and transactions.
+
+**Topics to include:**
+
+* `enable.idempotence`, `transactional.id`, `acks`, `retries`
+* Transaction boundaries: begin, commit, abort
+* Producer fencing and transactional guarantees
+* Role of transaction coordinator
+
+---
+
+### 🔍 **3. Consumer Isolation & Delivery Semantics**
+
+Focus: How consumers handle transactional data and achieve EOS from their side.
+
+**Topics to include:**
+
+* `isolation.level=read_committed` vs `read_uncommitted`
+* Behavior of consumers when reading from topics with aborted transactions
+* Implications for Kafka Streams or Connect consumers
+
+---
+
+### ⚙️ **4. EOS in Kafka Streams (Optional Swap)**
+
+(You can include this instead of "Consumer Isolation" if you’re targeting stream processing developers.)
+
+**Topics to include:**
+
+* How Streams uses transactions and changelogs
+* Exactly-once vs exactly-once-v2 processing guarantees
+* How state stores and output topics are coordinated
+
+---
+
+### 💡 Suggested Quiz Breakdown:
+
+| Category                          | # of Questions |
+| --------------------------------- | -------------- |
+| Core Concepts & Guarantees        | 3–5            |
+| Producer Mechanics & Transactions | 4–6            |
+| Consumer Isolation & Delivery     | 3–5            |
+| EOS in Kafka Streams (Optional)   | 3–4            |
+
+Would you like me to generate sample quiz questions per category now?

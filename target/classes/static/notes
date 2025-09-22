@@ -1,0 +1,173 @@
+PRIORITY
+Import all kafka part1 questions
+Import all kafka part2 questions
+
+BACKLOG
+Add button to see answer check right/wrong ->
+Ability to define num of questions from each section
+Last Question should not have next button
+
+
+DONE
+Add page with failed resultList -> 1.5  DONE
+Add button to show answer + explanationn-> 1
+Download list of failed questions
+
+1.Kafka Metrics Overview.md
+2.Monitoring Tools & Integration.md
+3.Lag Monitoring & Consumer Health.md
+4.Alerting & SLAs.md
+5.Kafka Connect & Streams Monitoring.md
+--------------
+Bring the folowing questions to the following format
+please generate 15 questions with regards to the following topic in the attached file
+
+
+By using following template, generate 12 questions with  the bellow format the topic
+
+**4. EOS in Kafka Streams (Optional Swap)**
+
+(You can include this instead of "Consumer Isolation" if you’re targeting stream processing developers.)
+
+**Topics to include:**
+
+* How Streams uses transactions and changelogs
+* Exactly-once vs exactly-once-v2 processing guarantees
+* How state stores and output topics are coordinated
+
+The format is this
+
+## Question 1
+
+```markdown
+This is some Question from part1. Btw the answer is C?
+```
+
+**Options**
+```markdown
+- A. answer1
+- B. answer2
+- C. answer3
+- D. answer4
+```
+
+<details><summary>Response:</summary>
+
+**Answer:** C
+
+**Explanation:**
+
+```markdown
+Here is some explanation
+
+- A. explanation1
+- B. explanation2
+- C. explanation3
+- D. explanation4
+```
+
+</details>
+
+The questions are
+
+
+1.Kafka Security Overview.md
+2.Encryption Between Clients and Brokers: SSL.md
+3.Authentication in Kafka: SASL.md
+4.Authorization in Kafka: ACLs.md
+5.Kafka Security in Practice: Putting It All Together.md
+
+
+Make sure the questions are challenging and simulate the real kafka exam difficulty
+
+
+I have these categories available
+
+
+1.kstreams.md
+2.ktables.md
+3.statefull-operations.md
+3.stateless-operations.md
+5.windows.md
+6.state-stores.md
+7.eos-streams.md
+8.topology.md
+10.repartition-and-internal-topics.md
+11.handling-failures.md
+12.joins.md
+13.globalktable.md
+14.serdes.md
+15.advanced-configs.md
+16.interactive-queries.md
+
+
+1.producer-configs.md
+2.delivery-semantics.md
+3.partition-logic.md
+4.error-handling.md
+5.throughput-latency-tradeoffs.md
+6.serialization.md
+7.producer-internals.md
+8.performance-compression-batching.md
+
+
+I want you to tell me in which category, each of these questions needs to go
+
+
+
+
+Now based on these categories give me a table matrix that says which of the following questions goes to which category
+
+1. What Is a Schema Registry?
+2. Avro + Schema Registry (merged)
+3. Strongly-Typed Producers/Consumers (Java)
+4. Schema Evolution & Compatibility
+5. REST API & Automation
+6. Multi-Tenant Management
+7. Monitoring & Troubleshooting
+
+
+
+I have the follwoing quizz categories for kafka -connect
+
+1.what-is-kafka-connect.md
+2.Source vs Sink Connectors.md
+3.How to Configure a Connector.md
+4.Standalone-vs-Distributed.md
+5.Single Message Transforms.md
+6.Performance Tunning.md
+7.Connector Development.md
+8.Error Handling & DLQs.md
+9.Monitoring & Metrics.md
+10.Security in Kafka Connect.md
+
+
+
+Controller & Leader Election.md
+Kafka Architecture & Components.md
+Producer & Consumer Mechanics.md
+Replication & Fault Tolerance.md
+ZooKeeper vs. KRaft Mode.md
+
+Whhere should each of these questions go ?
+
+Just give me a table/matrix question number - category
+
+
+
+1.kstreams.md
+2.ktables.md
+3.statefull-operations.md
+3.stateless-operations.md
+5.windows.md
+6.state-stores.md
+8.topology.md
+10.repartition-and-internal-topics.md
+11.handling-failures.md
+12.joins.md
+13.globalktable.md
+14.serdes.md
+16.interactive-queries.md
+
+
+

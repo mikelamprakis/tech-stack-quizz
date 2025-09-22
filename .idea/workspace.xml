@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="89f068e4-101f-4dd2-b9ae-6c82fbb8b3dd" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2yMLQs09E7LZqtqvolhe9bY6nmU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MarkdownOrganizer.executor": "Run",
+    "Application.QuizApplication.executor": "Run",
+    "Application.QuizServiceTest.executor": "Run",
+    "JUnit.QuizControllerTest.executor": "Run",
+    "JUnit.QuizControllerTest.testGetAllQuizzes.executor": "Run",
+    "JUnit.QuizControllerTest.testGetSectionsForQuiz.executor": "Run",
+    "JUnit.QuizServiceTest.getAllQuestions.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mikelamprakis/Desktop/exp-idea-demo/tech-stack-quizz",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/15.Rest Proxy" />
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/0.setup" />
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/1.broker" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/udemy/final" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/udemy/test1" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/1.broker" />
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/1.broker/replication and fault tolerance" />
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka/1.broker/broker configs" />
+      <recent name="$PROJECT_DIR$/src/main/resources/questions/kafka" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/udemy/test1" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.quiz.parser" />
+      <recent name="com.quiz.controller" />
+      <recent name="com.quiz.service" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QuizServiceTest">
+    <configuration name="MarkdownOrganizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.quiz.MarkdownOrganizer" />
+      <module name="quiz-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.quiz.QuizApplication" />
+      <module name="quiz-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quiz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.quiz.service.QuizServiceTest" />
+      <module name="quiz-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quiz.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quiz.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quiz.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.quiz.controller.QuizControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizControllerTest.testGetSectionsForQuiz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quiz-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.quiz.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.quiz.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.quiz.controller.QuizControllerTest" />
+      <option name="METHOD_NAME" value="testGetSectionsForQuiz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuizServiceTest" />
+        <item itemvalue="JUnit.QuizControllerTest" />
+        <item itemvalue="Application.QuizApplication" />
+        <item itemvalue="Application.MarkdownOrganizer" />
+        <item itemvalue="JUnit.QuizControllerTest.testGetSectionsForQuiz" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="89f068e4-101f-4dd2-b9ae-6c82fbb8b3dd" name="Changes" comment="" />
+      <created>1749639483110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749639483110</updated>
+    </task>
+    <servers />
+  </component>
+</project>
