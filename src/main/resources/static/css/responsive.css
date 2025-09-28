@@ -1,0 +1,20 @@
+/* Responsive design and media queries */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .navigation-buttons {
+        flex-direction: column;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+}

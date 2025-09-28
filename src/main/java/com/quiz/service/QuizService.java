@@ -8,6 +8,7 @@ import com.quiz.model.Category;
 import com.quiz.parser.QuestionUtils;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URISyntaxException;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -34,9 +35,56 @@ public class QuizService {
                 quiz.setId(quizId);
                 quiz.setName(formatQuizName(quizId));
                 quiz.setDescription("Questions about " + formatQuizName(quizId));
+                
+                // Check metadata file for availability
+                boolean isAvailable = checkQuizAvailability(quizId);
+                quiz.setAvailable(isAvailable);
+                
                 return quiz;
             })
+            .sorted((q1, q2) -> {
+                // Sort available quizzes first, then by name
+                if (q1.isAvailable() && !q2.isAvailable()) {
+                    return -1; // q1 comes first
+                } else if (!q1.isAvailable() && q2.isAvailable()) {
+                    return 1; // q2 comes first
+                } else {
+                    return q1.getName().compareTo(q2.getName());
+                }
+            })
             .toList();
+    }
+    
+    private boolean checkQuizAvailability(String quizId) {
+        try {
+            String metadataPath = "questions/" + quizId + "/metadata";
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream(metadataPath);
+            
+            if (inputStream == null) {
+                // No metadata file, assume available
+                return true;
+            }
+            
+            String content = new String(inputStream.readAllBytes());
+            inputStream.close();
+            
+            // Parse the metadata file
+            String[] lines = content.split("\n");
+            for (String line : lines) {
+                if (line.startsWith("state:")) {
+                    String state = line.substring(6).trim();
+                    return !"unavailable".equals(state);
+                }
+            }
+            
+            // No state found, assume available
+            return true;
+            
+        } catch (Exception e) {
+            // Error reading metadata, assume available
+            System.err.println("Error reading metadata for quiz " + quizId + ": " + e.getMessage());
+            return true;
+        }
     }
 
     public List<Category> getCategoriesForQuiz(String quizId) {
@@ -91,7 +139,7 @@ public class QuizService {
                         subcategory.setId(categoryId + "-" + subcategoryId);
                         subcategory.setName(subcategoryName);
                         subcategory.setQuizId(quizId);
-                        subcategory.setDifficulty(determineDifficulty(subcategoryId));
+                        subcategory.setDifficulty(determineDifficulty(categoryId + "-" + subcategoryId, quizId));
                         
                         subcategories.add(subcategory);
                     });
@@ -120,7 +168,7 @@ public class QuizService {
                 section.setId(sectionId);
                 section.setName(formatSectionName(sectionId));
                 section.setQuizId(quizId);
-                section.setDifficulty(determineDifficulty(sectionId));
+                section.setDifficulty(determineDifficulty(sectionId, quizId));
                 //System.out.println(">>>"+section);
                 return section;
             })
@@ -214,10 +262,23 @@ public class QuizService {
             .collect(Collectors.joining(" "));
     }
 
-    private String determineDifficulty(String sectionId) {
-        // You can implement your own logic to determine difficulty
-        // For now, we'll return a default value
-        return "medium";
+    private String determineDifficulty(String sectionId, String quizId) {
+        // Count questions for this section in the specific quiz
+        Map<String, List<Question>> quizSections = questions.get(quizId);
+        System.out.println("DEBUG: determineDifficulty called with sectionId=" + sectionId + ", quizId=" + quizId);
+        if (quizSections != null) {
+            System.out.println("DEBUG: Found quiz sections: " + quizSections.keySet());
+            List<Question> sectionQuestions = quizSections.get(sectionId);
+            if (sectionQuestions != null) {
+                System.out.println("DEBUG: Found " + sectionQuestions.size() + " questions for section " + sectionId);
+                return String.valueOf(sectionQuestions.size());
+            } else {
+                System.out.println("DEBUG: No questions found for section " + sectionId);
+            }
+        } else {
+            System.out.println("DEBUG: No quiz sections found for quiz " + quizId);
+        }
+        return "0";
     }
 
     private String formatSubcategoryName(String subcategoryId) {

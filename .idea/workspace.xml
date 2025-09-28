@@ -4,7 +4,182 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89f068e4-101f-4dd2-b9ae-6c82fbb8b3dd" name="Changes" comment="" />
+    <list default="true" id="89f068e4-101f-4dd2-b9ae-6c82fbb8b3dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/quiz/model/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/quiz/model/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/quiz/service/QuizService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/quiz/service/QuizService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/aws/section1/part1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/aws/section1/part2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.eos/1.Core Concepts and Guarantees.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.EOS (Excatly One Semantics)/1.Core Concepts and Guarantees.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.eos/2.Producer Mechanics and Transactions.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.EOS (Excatly One Semantics)/2.Producer Mechanics and Transactions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.eos/3.Consumer Isolation and Delivery Semantics.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.EOS (Excatly One Semantics)/3.Consumer Isolation and Delivery Semantics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.eos/4.EOS in Kafka Streams.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.EOS (Excatly One Semantics)/4.EOS in Kafka Streams.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.eos/notes" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/10.EOS (Excatly One Semantics)/notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.monitor/1.Kafka Metrics Overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.Monitoring/1.Kafka Metrics Overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.monitor/2.Monitoring Tools &amp; Integration.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.Monitoring/2.Monitoring Tools and Integration.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.monitor/3.Lag Monitoring &amp; Consumer Health.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.Monitoring/3.Lag Monitoring and Consumer Health.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.monitor/4.Alerting &amp; SLAs.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.Monitoring/4.Alerting and SLAs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.monitor/5.Kafka Connect &amp; Streams Monitoring.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/11.Monitoring/5.Kafka Connect and Streams Monitoring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.security/1.Kafka Security Overview.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.Security/1.Kafka Security Overview.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.security/2.Encryption Between Clients and Brokers: SSL.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.Security/2.Encryption Between Clients and Brokers: SSL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.security/3.Authentication in Kafka: SASL.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.Security/3.Authentication in Kafka: SASL.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.security/4.Authorization in Kafka: ACLs.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/12.Security/4.Authorization in Kafka: ACLs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/1.schema-registry.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/1.Schema Registry.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/2.avro.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/2.Avro.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/3.schema-evolution-compatibility.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/3.Schema Evolution Compatibility.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/4.strongly-typed-producers-consumers.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/4.Strongly Typed Producers and Consumers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/5.rest-api-automation.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/5.Rest Api Automation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/6.multi-tenant-management.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/6.Multi Tenant Management.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/7.monitoring-troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/13.Schema Registry/7.Monitoring and Troubleshooting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.ksql/1.Introduction to ksqlDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.KSQL/1.Introduction to ksqlDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.ksql/2.Creating Streams and Tables.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.KSQL/2.Creating Streams and Tables.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.ksql/3.Stream Processing in ksqlDB.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.KSQL/3.Stream Processing in ksqlDB.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.ksql/4.Joins and Enrichments.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.KSQL/4.Joins and Enrichments.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.ksql/5.ksqlDB in Production.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/14.KSQL/5.ksqlDB in Production.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/4.CLI/1.p1-done.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/1.producer-configs.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/1.Producer Configs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/2.delivery-semantics.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/2.Delivery Semantics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/3.partition-logic.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/3.Partition Logic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/4.error-handling.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/4.Error Handling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/5.throughput-latency-tradeoffs.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/5.Throughput vs Latency Tradeoffs.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/6.serialization.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/6.Serialization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/7.producer-internals.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/7.Producer Internals.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/8.performance-compression-batching.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.Producers/8.Performance Compression Batching.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/5.producers/cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/1.Consumer Basics.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/1.Consumer Basics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/2.partition-assignment-strategies.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/2.Partition Assignment Strategies.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/3.offset-management.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/3.Offset Management.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/4.consumer-configurations.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/4.Consumer Configurations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/5.error-handling-and-failover.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/5.Error Handling and Failover.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/6.consumer-internals.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/6.Consumer Internals.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/7.consumers-groups-coordination.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/7.Consumers Groups Coordination.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/8.performance-throughput-optimization.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/8.Performance Throughput Optimization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.consumers/9.rebalancing.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/6.Consumers/9.Rebalancing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/1.Kafka Broker Startup.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.Internals/1.Kafka Broker Startup.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/2.Monitoring and Troubleshooting.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.Internals/2.Monitoring and Troubleshooting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/3.Replication and Leader Election.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.Internals/3.Replication and Leader Election.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/4.The Kafka Controller.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.Internals/4.The Kafka Controller.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/5.ZooKeeper vs. KRaft Mode.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.Internals/5.ZooKeeper vs. KRaft Mode.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/other-Kafka Architecture &amp; Components/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/other-Kafka Architecture &amp; Components/other-Kafka Architecture &amp; Components-Kafka Architecture &amp; Components/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/other-Producer &amp; Consumer Mechanics/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/7.internals/other/other-Producer &amp; Consumer Mechanics/other-Producer &amp; Consumer Mechanics-Producer &amp; Consumer Mechanics/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/1.kstreams.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/1.KStreams.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/10.repartition-and-internal-topics.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/10.Repartition and Internal Topics.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/11.handling-failures.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/11.Handling Failures.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/12.joins.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/12.Joins.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/13.globalktable.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/13.GlobalKTables.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/14.serdes.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/14.Serdes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/16.interactive-queries.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/16.Interactive Queries.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/2.ktables.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/2.KTables.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/3.statefull-operations.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/3.Statefull Operations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/3.stateless-operations.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/3.Stateless Operations.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/5.windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/5.Windows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/6.state-stores.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/6.State Stores.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/8.topology.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/8.Kafka Streams/8.Topology.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/9.Kafka Connect/1.what-is-kafka-connect.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/9.Kafka Connect/1.What is Kafka Connect.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/questions/kafka/9.Kafka Connect/4.Standalone-vs-Distributed.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/questions/kafka/9.Kafka Connect/4.Standalone vs Distributed.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/ui/uiFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ui/uiFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/MarkdownOrganizer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/MarkdownOrganizer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/MarkdownOrganizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/MarkdownOrganizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/QuizApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/QuizApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/controller/QuizController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/controller/QuizController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/Question$QuestionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/Question$QuestionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/Quiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/Quiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/QuizSubmission.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/QuizSubmission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/model/Section.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/model/Section.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/parser/QuestionUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/parser/QuestionUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quiz/service/QuizService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quiz/service/QuizService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/aws/section1/part1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/aws/section1/part2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/10.eos/1.Core Concepts and Guarantees.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/10.eos/2.Producer Mechanics and Transactions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/10.eos/3.Consumer Isolation and Delivery Semantics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/10.eos/4.EOS in Kafka Streams.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/10.eos/notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/11.monitor/1.Kafka Metrics Overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/11.monitor/2.Monitoring Tools &amp; Integration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/11.monitor/3.Lag Monitoring &amp; Consumer Health.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/11.monitor/4.Alerting &amp; SLAs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/11.monitor/5.Kafka Connect &amp; Streams Monitoring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/12.security/1.Kafka Security Overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/12.security/2.Encryption Between Clients and Brokers: SSL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/12.security/3.Authentication in Kafka: SASL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/12.security/4.Authorization in Kafka: ACLs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/1.schema-registry.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/2.avro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/3.schema-evolution-compatibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/4.strongly-typed-producers-consumers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/5.rest-api-automation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/6.multi-tenant-management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/13.Schema Registry/7.monitoring-troubleshooting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/14.ksql/1.Introduction to ksqlDB.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/14.ksql/2.Creating Streams and Tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/14.ksql/3.Stream Processing in ksqlDB.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/14.ksql/4.Joins and Enrichments.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/14.ksql/5.ksqlDB in Production.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/1.producer-configs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/2.delivery-semantics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/3.partition-logic.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/4.error-handling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/5.throughput-latency-tradeoffs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/6.serialization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/7.producer-internals.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/8.performance-compression-batching.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/5.producers/cat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/1.Consumer Basics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/2.partition-assignment-strategies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/3.offset-management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/4.consumer-configurations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/5.error-handling-and-failover.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/6.consumer-internals.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/7.consumers-groups-coordination.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/8.performance-throughput-optimization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/6.consumers/9.rebalancing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/1.Kafka Broker Startup.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/2.Monitoring and Troubleshooting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/3.Replication and Leader Election.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/4.The Kafka Controller.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/5.ZooKeeper vs. KRaft Mode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/other-Kafka Architecture &amp; Components/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/other-Kafka Architecture &amp; Components/other-Kafka Architecture &amp; Components-Kafka Architecture &amp; Components/Kafka Architecture &amp; Components.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/other-Producer &amp; Consumer Mechanics/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/7.internals/other/other-Producer &amp; Consumer Mechanics/other-Producer &amp; Consumer Mechanics-Producer &amp; Consumer Mechanics/Producer &amp; Consumer Mechanics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/1.kstreams.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/10.repartition-and-internal-topics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/11.handling-failures.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/12.joins.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/13.globalktable.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/14.serdes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/16.interactive-queries.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/2.ktables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/3.statefull-operations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/3.stateless-operations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/5.windows.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/6.state-stores.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/8.Kafka Streams/8.topology.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/9.Kafka Connect/1.what-is-kafka-connect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/questions/kafka/9.Kafka Connect/4.Standalone-vs-Distributed.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/ui/uiFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/ui/uiFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/quiz/parser/QuestionUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/quiz/parser/QuestionUtilsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/quiz/service/QuizServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/quiz/service/QuizServiceTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,12 +217,11 @@
     "JUnit.QuizControllerTest.testGetSectionsForQuiz.executor": "Run",
     "JUnit.QuizServiceTest.getAllQuestions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/mikelamprakis/Desktop/exp-idea-demo/tech-stack-quizz",
+    "last_opened_file_path": "/Users/mikelamprakis/Desktop/edu-demos/tech-stack-quizz",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie"
   }
 }]]></component>
@@ -75,7 +249,7 @@
       <recent name="com.quiz.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuizServiceTest">
+  <component name="RunManager" selected="Application.QuizApplication">
     <configuration name="MarkdownOrganizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.quiz.MarkdownOrganizer" />
       <module name="quiz-app" />
@@ -91,7 +265,7 @@
     </configuration>
     <configuration name="QuizApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.quiz.QuizApplication" />
-      <module name="quiz-app" />
+      <module name="tech-stack-quizz" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.quiz.*" />
@@ -148,9 +322,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuizApplication" />
         <item itemvalue="Application.QuizServiceTest" />
         <item itemvalue="JUnit.QuizControllerTest" />
-        <item itemvalue="Application.QuizApplication" />
         <item itemvalue="Application.MarkdownOrganizer" />
         <item itemvalue="JUnit.QuizControllerTest.testGetSectionsForQuiz" />
       </list>

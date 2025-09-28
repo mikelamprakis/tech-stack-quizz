@@ -1,0 +1,129 @@
+/* Results display and scoring components */
+
+#results {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.score {
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+    margin: 20px 0;
+}
+
+/* Score section with professional border */
+.score-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid #4CAF50;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+    display: block;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15);
+    position: relative;
+}
+
+.score-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    border-radius: 12px 12px 0 0;
+}
+
+.score-section h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.score-section .score {
+    margin: 15px 0;
+}
+
+#result-screen p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#score, #total-score {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Incorrect answers section */
+.incorrect-answers {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.incorrect-answers h4 {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.download-section {
+    margin-bottom: 20px;
+}
+
+.incorrect-answers-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.incorrect-answer-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.incorrect-answer-item:hover {
+    border-color: #4CAF50;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.incorrect-answer-item h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.answer-comparison {
+    margin-bottom: 10px;
+}
+
+.user-answer, .correct-answer {
+    margin: 5px 0;
+}
+
+.wrong {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.correct {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.click-hint {
+    color: #666;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 10px;
+}

@@ -12,15 +12,24 @@ export async function loadQuizzes() {
         elements.quizList.innerHTML = '';
         quizzes.forEach(quiz => {
             const quizItem = document.createElement('div');
-            quizItem.className = 'quiz-item';
+            quizItem.className = `quiz-item ${!quiz.available ? 'unavailable' : ''}`;
             quizItem.dataset.quizId = quiz.id;
             quizItem.innerHTML = `
                 <div class="quiz-info">
                     <h3>${quiz.name}</h3>
                     <p>${quiz.description}</p>
+                    ${!quiz.available ? '<span class="unavailable-indicator">Coming soon...</span>' : ''}
                 </div>
             `;
-            quizItem.onclick = () => handleQuizSelection(quiz.id, quiz.name);
+            
+            // Only allow selection if quiz is available
+            if (quiz.available) {
+                quizItem.onclick = () => handleQuizSelection(quiz.id, quiz.name);
+            } else {
+                quizItem.style.cursor = 'not-allowed';
+                quizItem.title = 'This quiz is currently unavailable';
+            }
+            
             elements.quizList.appendChild(quizItem);
         });
     } catch (error) {
@@ -64,7 +73,7 @@ export async function loadCategories(quizId) {
                 sectionItem.innerHTML = `
                     <div class="section-info">
                         <h4>${section.name}</h4>
-                        <p>Difficulty: ${section.difficulty}</p>
+                        <p>Questions: ${section.difficulty}</p>
                     </div>
                 `;
                 sectionItem.onclick = () => handleSectionSelection(section.id);
@@ -93,7 +102,7 @@ export async function loadSections(quizId) {
             sectionItem.innerHTML = `
                 <div class="section-info">
                     <h3>${section.name}</h3>
-                    <p>Difficulty: ${section.difficulty}</p>
+                    <p>Questions: ${section.difficulty}</p>
                 </div>
             `;
             sectionItem.onclick = () => handleSectionSelection(section.id);

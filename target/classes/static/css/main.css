@@ -1,0 +1,10 @@
+/* Main CSS file - Imports all organized CSS files */
+
+@import url('base.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('selection.css');
+@import url('quiz.css');
+@import url('results.css');
+@import url('modal.css');
+@import url('responsive.css');

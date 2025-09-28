@@ -225,11 +225,13 @@ export function displayResults(result) {
     
     // Display score
     elements.scoreDisplay.innerHTML = `
-        <h3>Quiz Complete!</h3>
-        <p>Your Score:</p>
-        <div class="score">${correctAnswers} / ${totalQuestions} questions correct</div>
-        <p>Points: ${result.score} / ${result.totalPossibleScore}</p>
-        <p>Percentage: ${score}%</p>
+        <div class="score-section">
+            <h3>Quiz Complete!</h3>
+            <p>Your Score:</p>
+            <div class="score">${correctAnswers} / ${totalQuestions} questions correct</div>
+            <p>Points: ${result.score} / ${result.totalPossibleScore}</p>
+            <p>Percentage: ${score}%</p>
+        </div>
     `;
     
     // Display incorrect answers if any
